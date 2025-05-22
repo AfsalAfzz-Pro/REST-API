@@ -1,0 +1,52 @@
+{
+  "total_records_saved": 2,
+  "total_records_rejected": 4,
+  "rejected_records": [
+    {
+      "row": 3,
+      "data": {
+        "name": "Invalid User",
+        "email": "",
+        "age": "200"
+      },
+      "errors": {
+        "email": ["This field may not be blank."],
+        "age": ["Ensure this value is less than or equal to 120."]
+      }
+    },
+    {
+      "row": 4,
+      "data": {
+        "name": "Duplicate User",
+        "email": "john.doe@example.com",
+        "age": "40"
+      },
+      "errors": {
+        "email": ["Email already exists"]
+      }
+    },
+    {
+      "row": 5,
+      "data": {
+        "name": "Young User",
+        "email": "young@example.com",
+        "age": "17"
+      },
+      "errors": {
+        "age": ["User must be at least 18 years old"]
+      }
+    },
+    {
+      "row": 6,
+      "data": {
+        "name": "",
+        "email": "",
+        "age": "22"
+      },
+      "errors": {
+        "name": ["This field may not be blank."],
+        "email": ["This field may not be blank."]
+      }
+    }
+  ]
+} 
